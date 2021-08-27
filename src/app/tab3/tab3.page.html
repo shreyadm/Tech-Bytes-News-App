@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Contact Us
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col offset-lg="4" size-lg="4">
+
+        <ion-card>
+          <ion-card-header class="ion-text-center">
+            <ion-card-title>Source code</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            <a href="https://github.com/" target="_blank">
+              <ion-button >
+                <ion-icon slot="icon-only" name="code-slash-outline"></ion-icon>
+               </ion-button>
+            </a>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-list>
+            <ion-list-header>
+              Tech Stack
+            </ion-list-header>
+
+            <ion-item>
+              <ion-icon name="logo-ionic"></ion-icon>
+              <ion-label class="ion-padding">
+                <h2>Ionic</h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="logo-angular"></ion-icon>
+              <ion-label class="ion-padding">
+                <h2>Angular</h2>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="extension-puzzle-outline"></ion-icon>
+              <ion-label class="ion-padding">
+                <h2>News API</h2>
+              </ion-label>
+            </ion-item>
+
+          </ion-list>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

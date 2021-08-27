@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tech Bytes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col offset-lg="2" size-lg="8">
+        <ion-card *ngFor="let article of articles;" (click)="onLoadNews(article)">
+
+          <ion-img class="ion-text-center" [src]="article.urlToImage"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{article.title}}</ion-card-title>
+          </ion-card-header>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
